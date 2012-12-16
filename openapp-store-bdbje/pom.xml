@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.openapplication.store</groupId>
+    <artifactId>openapp-store-project</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>..</relativePath>
+  </parent>
+  <artifactId>openapp-store-bdbje</artifactId>
+  <name>OpenApp Store BerkeleyDBJE</name>
+  <description>OpenApp Berkeley DB Java Edition store</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.openapplication.store</groupId>
+      <artifactId>openapp-store</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openapplication.store</groupId>
+      <artifactId>openapp-store</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.sleepycat</groupId>
+      <artifactId>je</artifactId>
+      <version>5.0.58</version>
+    </dependency>
+  </dependencies>
+  <repositories>
+    <repository>
+      <id>oracleReleases</id>
+      <name>Oracle Released Java Packages</name>
+      <url>http://download.oracle.com/maven</url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+</project>

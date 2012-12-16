@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.openapplication</groupId>
+    <artifactId>openapp</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+  <groupId>org.openapplication.store</groupId>
+  <artifactId>openapp-store-project</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>OpenApp Store Project</name>
+  <description>OpenApp store project</description>
+  <developers>
+    <developer>
+      <url>https://github.com/erikis</url>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:git@github.com:openapp/store.git</connection>
+    <developerConnection>scm:git:git@github.com:openapp/store.git</developerConnection>
+    <url>https://github.com/openapp/store</url>
+  </scm>
+  <modules>
+    <module>openapp-store</module>
+    <module>openapp-store-native</module>
+    <module>openapp-store-leveldb</module>
+    <module>openapp-store-bdbje</module>
+    <module>openapp-store-hbase</module>
+  </modules>
+</project>
